@@ -1,7 +1,7 @@
 # Olá, eu sou Eduardo Faria
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/01932993-4fa4-4593-bdab-b2d8548882e9" width="350px" />
+<img src="https://avatars.githubusercontent.com/u/171455304?v=4" width="350px" />
 </div>
 
 ## Sobre mim
