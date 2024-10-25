@@ -1,4 +1,5 @@
 # Olá, eu sou Eduardo Faria
+![Minha Imagem](https://avatars.githubusercontent.com/u/171455304?v=4)
 
 ## Sobre mim
 
