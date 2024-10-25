@@ -1,7 +1,7 @@
 # Olá, eu sou Eduardo Faria
 
 <div align="center">
-<img src="https://avatars.githubusercontent.com/u/171455304?v=4" width="300px" />
+<img src="Imagem/Minha Foto.jpg" width="300px" />
 </div>
 
 ## Sobre mim
@@ -16,4 +16,6 @@
 * ⚽ **Hobbies:** Games e Futebol.
 
 ## Sprints
+
+* [Sprint 1](/Sprint%201/)
 
