@@ -2,7 +2,7 @@
 
 ## Sobre mim
 
-* 🌍 **Localizção:** Mogi-Mirim/SP.
+* 🌍 **Localização:** Mogi-Mirim/SP.
 * 📚 **Instituição de Ensino:** FATEC Arthur de Azevedo.
 * 💻 **Curso:** Análise e Desenvolvimento de Sistema.
 * 🎓 **Semestre:** 3° semestre.
