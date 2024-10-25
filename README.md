@@ -6,7 +6,8 @@
 * 📚 **Instituição de Ensino:** FATEC Arthur de Azevedo.
 * 💻 **Curso:** Análise e Desenvolvimento de Sistema.
 * 🎓 **Semestre:** 3° semestre.
-* 💼 **Experiência:** Metalurgica.
+* 💼 **Experiência:** Estagio Compass.UOL
+* 💭 **SoftSkills:** Adaptabilidade, trabalho em equipe, comunicação, autodisciplina, resiliência.
 * 💡 **Conhecimento:** Linux, Git e GitHub, C, SQL.
 * ⚽ **Hobbies:** Games e Futebol.
 
