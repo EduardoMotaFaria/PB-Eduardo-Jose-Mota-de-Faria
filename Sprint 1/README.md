@@ -1,42 +1,43 @@
-# Instruções
+# Relatório da Sprint
 
-Este arquivo será o relato da sua entrega. Neste arquivo você fará a organização geral ao longo da Sprint. Esperamos que haja, minimamente:
+Este arquivo contém a organização e o progresso realizado ao longo da Sprint, incluindo um resumo das principais aprendizagens e uma breve descrição de cada pasta relacionada a este ciclo.
 
-- Uma ou mais seções para descrever o que estiver aprendendo (resumo), de maneira estruturada.
+## Resumo
 
-- Breve conteúdo de cada pasta relacionada a sprint.
+### GitHub
+Nesta Sprint, aprendi a utilizar o GitHub para controle de código, permitindo o controle de alterações no projeto. Meus principais aprendizados foram:
+- Criação e configuração de repositórios.
+- Realização de commits e push de alterações para o repositório remoto.
+- Utilização de branches para controle de versões paralelas do projeto.
+- Conhecimento sobre `Markdown` e modificação de `Readme`.
 
-# Resumo
+### Linux
+Durante esta Sprint, explorei o funcionamento do sistema operacional Linux. As principais descobertas foram:
+- Utilização de comandos básicos no terminal, como `ls`, `cd`, `mkdir` e `rm`.
+- Gestão de permissões de arquivos e diretórios.
+- Manipulação de arquivos e diretórios, e navegação pelo sistema de arquivos.
+- Criação de editores como `nano`, `vim` e comando relacionados a eles.
+- Agendamento de tarefas usando `crontab`.
 
-**Git Hub:** Aprendi isso, isso e mais aquilo.
+## Certificados
+Nesta pasta terá todos certificados adquiridos durante a Sprint.
 
-**Linux:** Pude entender como funciona isso e aquilo.
+### GitHub
+![Descrição da Imagem](/Imagem/GitHub%20Certifcate.jpg)
 
-# Exercícios
+### Linux
+![Descrição da Imagem](/Imagem/Linux%20Certificate.jpg)
 
+## Desafio
+#### Nesta pasta terá todos os arquivos e explicação sobre o Desafio.                       
+O objetivo desta Sprint 1 foi realizar um desafio utilizando o terminal e comandos Linux. O desafio consistiu em criar um arquivo executável que criasse um diretório e gerasse um arquivo relatorio.txt diariamente, de segunda a quinta-feira, às 15:27. O arquivo de relatório deveria conter as seguintes informações, extraídas de um arquivo de vendas.
 
-1. ...
-[Resposta Ex1.](exercicios/ex1.txt)
+Também dentro dessa Sprint, tive um Desafio de criar e configurar o GitHub, criação de repositórios, utilização de Markdown e realização de operações de commit e push para poder subir todos os arquivos desta Sprint.
 
+## Evidências
+#### Nesta pasta terá todas as prints e evidências do Desafio 
 
-2. ...
-[Resposta Ex2.](exercicios/ex2.txt)
+## Exercícios 
+#### Dentro desta pasta terá execícios resolvidos durante a Sprint. 
 
-
-
-# Evidências
-
-
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
-
-![Evidencia 1](evidencias/sample.webp)
-
-
-# Certificados
-
-
-Certificado do Curso ABC
-
-![Curso ABC](certificados/sample.png)
-
-
+* (Observação: Durante essa Sprint 1 não teve exercícios a serem resolvidos.)
