@@ -23,10 +23,10 @@ Durante esta Sprint, explorei o funcionamento do sistema operacional Linux. As p
 Nesta pasta terá todos certificados adquiridos durante a Sprint.
 
 ### GitHub
-![Descrição da Imagem](/Imagem/GitHub%20Certifcate.jpg)
+![Descrição da Imagem](/Sprint%201/Certificados/GitHub%20Certifcate.jpg)
 
 ### Linux
-![Descrição da Imagem](/Imagem/Linux%20Certificate.jpg)
+![Descrição da Imagem](/Sprint%201/Certificados/Linux%20Certificate.jpg)
 
 ## Desafio
 #### Nesta pasta terá todos os arquivos e explicação sobre o Desafio.                       
