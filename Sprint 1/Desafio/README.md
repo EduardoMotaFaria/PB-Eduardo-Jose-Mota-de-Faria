@@ -94,7 +94,7 @@ Para gerar as `10 primeiras linhas do arquivo`, utilizei o comando `head` com de
 
 ![Zip e Delete dos Arquivos](/Sprint%201/Evidencias/Zip%20e%20Delete%20arquivos.jpg)
 
-6. Agendar a execução desse Script para gerar um telatório por dia, de `Segunda` a `Quinta` as `15:27` Automatizado. (Obs: neste Script consegui realizar de `Quinta a Domingo`).
+6. Agendar a execução desse Script para gerar um relatório por dia, de `Segunda` a `Quinta` as `15:27` Automatizado. (Obs: neste Script consegui realizar de `Quinta a Domingo`).
 Utilizei o comando `Crontab`. 
 
 #### Comandos Usado:
