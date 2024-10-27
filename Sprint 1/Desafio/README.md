@@ -29,7 +29,7 @@ Dentro desse Script utilizei os comandos abaixo para criar os diretórios
 
 ![Criação de diretórios](/Sprint%201/Evidencias/Criação%20de%20diretorios.jpg)
 
-Com esse trecho de código obvtive a criação dos Diretórios `Vendas` e `backup`
+Com esse trecho de código obtive a criação dos Diretórios `Vendas` e `backup`
 
 ![Diretório vendas](/Sprint%201/Evidencias/Diretório%20Vendas.jpg)
 
