@@ -20,13 +20,7 @@ Durante esta Sprint, explorei o funcionamento do sistema operacional Linux. As p
 - Agendamento de tarefas usando `crontab`.
 
 ## Certificados
-Nesta pasta terá todos certificados adquiridos durante a Sprint.
-
-### GitHub
-![Descrição da Imagem](/Sprint%201/Certificados/GitHub%20Certifcate.jpg)
-
-### Linux
-![Descrição da Imagem](/Sprint%201/Certificados/Linux%20Certificate.jpg)
+Nesta pasta terá todos certificados sobre AWS adquiridos durante a Sprint.
 
 ## Desafio
 #### Nesta pasta terá todos os arquivos e explicação sobre o Desafio.                       
