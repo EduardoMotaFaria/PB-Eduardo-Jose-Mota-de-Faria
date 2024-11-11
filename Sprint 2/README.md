@@ -4,34 +4,37 @@ Este arquivo contém a organização e o progresso realizado ao longo da Sprint,
 
 ## Resumo
 
-### GitHub
-Nesta Sprint, aprendi a utilizar o GitHub para controle de código, permitindo o controle de alterações no projeto. Meus principais aprendizados foram:
-- Criação e configuração de repositórios.
-- Realização de commits e push de alterações para o repositório remoto.
-- Utilização de branches para controle de versões paralelas do projeto.
-- Conhecimento sobre `Markdown` e modificação de `Readme`.
+### SQL
+Durante a Sprint, aprendi a trabalhar com SQL desenvolvendo habilidades em manipulação e análise de dados.
 
-### Linux
-Durante esta Sprint, explorei o funcionamento do sistema operacional Linux. As principais descobertas foram:
-- Utilização de comandos básicos no terminal, como `ls`, `cd`, `mkdir` e `rm`.
-- Gestão de permissões de arquivos e diretórios.
-- Manipulação de arquivos e diretórios, e navegação pelo sistema de arquivos.
-- Criação de editores como `nano`, `vim` e comando relacionados a eles.
-- Agendamento de tarefas usando `crontab`.
+Meus principais aprendizados foram:
+- Sintaxe básica, incluindo comandos como `SELECT`, `INSERT`, `UPDATE` e `DELETE`.
+- Realização de consultas específicas utilizando `WHERE`, conhecimento em análises agregadas com `GROUP BY`.
+- Conhecimento do `JOIN` para relacionar tabelas e enriquecer consultas.
+- Subqueries para criar consultas mais complexas e organizadas.
+- Criação e Manipulção de tabelas com `CREATE TABLE` e `ALTER TABLE`.
+- Normalização de Banco de Dados e seus conceitos.
+- Modelagem de dados, projetando esquemas de dados.
 
 ## Certificados
 Nesta pasta terá todos certificados sobre AWS adquiridos durante a Sprint.
 
+[Certificados](./Certificados/)
+
 ## Desafio
 #### Nesta pasta terá todos os arquivos e explicação sobre o Desafio.                       
-O objetivo desta Sprint 1 foi realizar um desafio utilizando o terminal e comandos Linux. O desafio consistiu em criar um arquivo executável que criasse um diretório e gerasse um arquivo relatorio.txt diariamente, de segunda a quinta-feira, às 15:27. O arquivo de relatório deveria conter as seguintes informações, extraídas de um arquivo de vendas.
+O objetivo desta Sprint 2 foi realizar um desafio em SQL. Onde o desafio consistiu em normalizar um Banco de Dados Relacional, aplicando as formas normais e depois converter esse modelo Relacional para um modelo Dimensional.
 
-Também dentro dessa Sprint, tive um Desafio de criar e configurar o GitHub, criação de repositórios, utilização de Markdown e realização de operações de commit e push para poder subir todos os arquivos desta Sprint.
+[Desafio](./Desafio/)
 
 ## Evidências
 #### Nesta pasta terá todas as prints e evidências do Desafio 
 
+[Evidências](./Evidencias/)
+
 ## Exercícios 
 #### Dentro desta pasta terá execícios resolvidos durante a Sprint. 
 
-* (Observação: Durante essa Sprint 1 não teve exercícios a serem resolvidos.)
+* Nesta Sprint 2 foi realizado exercícios de SQL.
+
+[Exercícios](./Exercicios/)
