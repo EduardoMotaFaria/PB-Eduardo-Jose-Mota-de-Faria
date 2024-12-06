@@ -1,4 +1,4 @@
-def processar_notas():
+def ler_notas():
     with open('estudantes.csv', 'r', encoding='utf-8') as arquivo:
         linhas = arquivo.readlines()
 
@@ -16,4 +16,4 @@ def processar_notas():
         print(resultado)
 
 
-processar_notas()
+ler_notas()
