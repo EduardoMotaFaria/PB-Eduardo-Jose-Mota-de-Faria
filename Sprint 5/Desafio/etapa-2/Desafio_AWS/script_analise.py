@@ -5,15 +5,18 @@ caminho_dataset = 'Contratos_Capes_Tratado.csv'
 dataset = pd.read_csv(caminho_dataset, encoding='utf-8',
                       delimiter=';')
 
-# "Qual é o valor total e a média dos contratos no tipo 'Serviços', assinados entre 2020 e 2023, com a moeda 'BRL'? é possível adicionar uma coluna indicando o valor do contrato excede 500.000 BRL e converter esses valores para ter o resultado com 2 casas depois da virgula?"
+# "Qual é o valor total e a média dos contratos no tipo 'Serviços', assinados entre 2020 e 2023, com a moeda 'BRL'? Adicionando uma coluna indicando o valor do contrato que excede 500.000 BRL e converter esses valores para ter o resultado com 2 casas depois da virgula."
 
 
 dataframe = pd.DataFrame(data=dataset)
 
+dataframe['AN_INICIO_VIGENCIA'] = pd.to_datetime(
+    dataframe['AN_INICIO_VIGENCIA'], errors='coerce')
+
 filtrando_dados = dataframe[(dataframe['TP_CONTRATO'] == 'Servicos') &
                             (dataframe['CD_MOEDA'] == 'BRL') &
-                            (dataframe['AN_INICIO_VIGENCIA'] >= '2020-01-01') &
-                            (dataframe['AN_INICIO_VIGENCIA'] <= '2023-12-31')]
+                            (dataframe['AN_INICIO_VIGENCIA'].dt.year >= 2020) &
+                            (dataframe['AN_INICIO_VIGENCIA'].dt.year <= 2023)]
 
 filtrando_dados = filtrando_dados[filtrando_dados['TP_CONTRATO'].str.contains(
     'Servicos', case=False, na=False)]
