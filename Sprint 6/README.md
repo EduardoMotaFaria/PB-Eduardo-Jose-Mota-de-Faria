@@ -13,6 +13,9 @@ Técnicas aperfeiçoadas foram:
 - Gerenciamento de Buckets: `Upload`,`Dowload`, `Criação de Buckets`, `Listagem de Buckets`.
 - Lidar com erros e exceções: `except`.
 - Automação de Script: `boto3.resource`.
+- Utilização de comandos para configuração de Imagem: `COPY`, `CMD`, `WORKDIR`, `FROM`, `RUN`.
+- Gerenciamento de Contêineres: `Docker Run`, `Docker Build`.
+- Criação do `Dockerfile`.
 
 ## Certificados
 Nesta pasta terá todos certificados sobre AWS adquiridos durante a Sprint.
