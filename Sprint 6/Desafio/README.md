@@ -1,6 +1,6 @@
 # Objetivo
 
-O objetivo da Sprint 6, era criar um script em python utilizando a biblioteca `Boto3` para que ele criasse um `Bucket` e fizesse `Upload` do arquivo `CSV` que é dataset. Feito isso o objetivo era rodar uma imagem no `Docker`, para carregar o arquivo `CSV` e executar o script em python.
+O objetivo da Sprint 6, era criar um script em python utilizando a biblioteca `Boto3` para que ele criasse um `Bucket` e fizesse `Upload` do arquivo `CSV` que é um dataset. Feito isso o objetivo era rodar uma imagem no `Docker`, para carregar o arquivo `CSV` e executar o Script em python.
 
 Visto que nesta sprint é a primeira etapa do `Desafio Final`, também foi gerado as seguintes análises sobre o tema `Sci-fi/Fantasia`:
 
@@ -14,7 +14,7 @@ OBS: Visto que as análises será feita sobre filmes, foi feito somente o envio 
 
 # Etapas
 
-1. Nesta primeira etapa, o objetivo era implementar o script utilizando a biblioteca `Boto3`, ele irá criar o bucket e enviar os arquivos para o `S3` da `AWS`. De início foi usado as credenciais, visto que elas são essenciais para autenticar e autorizar o acesso aos serviços da `AWS`. Para acesso das credenciais foi utilizado o comando `Input`, presando a segurança, visto que as credenciais não estarão exposta e só quem tem acesso a elas poderá fornecer. Logo depois foi definido o nome do Bucket que irá ser criado, foi utilizado o nome `bucket-desafio-final`. Neste script foi utilizado a biblioteca `datetime` para capturar a data e hora atual quando o arquivo for enviado, ele extrai o ano, mês e dia, e formata o mês e dia para dois dígitos. Também foi destinado qual caminho o arquivo `CSV` ficará armazenado no `Bucket`, contendo a data do envio. Também foi utilizado comando `try` para caso de algum erro ele acaba passando para a função `except` que exibe uma mensagem mostrando o erro. para criação do bucket foi utilizado o comando `create_bucket` em caso de sucesso ele imprime uma mensagem confirmando a criação do Bucket. Em caso de exceção e erro, o comando `except` exibe uma mensagem de erro. Por fim foi definido o caminho local do arquivo que será enviado, foi utilizado a mesma lógica da criação do bucket, porém substituíndo o comando para `upload_file`.
+1. Nesta primeira etapa, o objetivo era implementar o Script utilizando a biblioteca `Boto3`, ele irá criar o bucket e enviar os arquivos para o `S3` da `AWS`. De início foi usado as credenciais, visto que elas são essenciais para autenticar e autorizar o acesso aos serviços da `AWS`. Para acesso das credenciais foi utilizado o comando `Input`, presando a segurança, visto que as credenciais não estarão exposta e só quem tem acesso a elas poderá fornecer. Logo depois foi definido o nome do Bucket que irá ser criado, foi utilizado o nome `bucket-desafio-final`. Neste script foi utilizado a biblioteca `datetime` para capturar a data atual quando o arquivo for enviado, ele extrai o ano, mês e dia, e formata o mês e dia para dois dígitos. Também foi destinado qual caminho o arquivo `CSV` ficará armazenado no `Bucket`, contendo a data do envio. Também foi utilizado comando `try` para caso de algum erro ele acaba passando para a função `except` que exibe uma mensagem mostrando o erro. para criação do bucket foi utilizado o comando `create_bucket` em caso de sucesso ele imprime uma mensagem confirmando a criação do Bucket. Em caso de exceção e erro, o comando `except` exibe uma mensagem de erro. Por fim foi definido o caminho local do arquivo que será enviado, foi utilizado a mesma lógica da criação do bucket, porém substituíndo o comando para `upload_file`.
 
 ![Script para envio do CSV](../Evidencias/Script%20para%20envio%20do%20CSV.jpg)
 
@@ -22,7 +22,7 @@ OBS: Visto que as análises será feita sobre filmes, foi feito somente o envio 
 
 ![Código Dockerfile](../Evidencias/Código%20Dockerfile.jpg)
 
-3. Nesta terceira etapa, o objetivo foi buildar a imagem, baseado no arquivo `Dockerfile` que foi gerado na primeira etapa. Foi utilizado o comando `Docker build`, para criar a imagem. Foi utilizado também o comando `-t`, ele é usado para nomear a imagem, foi nomeado `implementacao-s3`. Por fim utilizado `.` que indica que o diretório atual será usado para construção da imagem.
+3. Nesta terceira etapa, o objetivo foi buildar a imagem, baseado no arquivo `Dockerfile` que foi gerado na segunda etapa. Foi utilizado o comando `Docker build`, para criar a imagem. Foi utilizado também o comando `-t`, ele é usado para nomear a imagem, foi nomeado `implementacao-s3`. Por fim utilizado `.` que indica que o diretório atual será usado para construção da imagem.
 
 ![Buildando a imagem implementacao-s3](../Evidencias/Biuldando%20a%20imagem%20Implementacao-s3.jpg)
 

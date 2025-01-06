@@ -24,7 +24,7 @@ Nesta pasta terá todos certificados sobre AWS adquiridos durante a Sprint.
 
 ## Desafio
 #### Nesta pasta terá todos os arquivos e uma explicação breve sobre o Desafio.                       
-O objetivo da Sprint 6, era a criação de um Script utilizando `Boto3` que criasse um bucket e carregasse o arquivo `dataset` para dentro desse bucket.
+O objetivo da Sprint 6, era a criação de um Script utilizando `Boto3` que criasse um bucket e carregasse o arquivo `dataset` para dentro desse bucket. E que executasse esse Script utilizando `Docker`.
 
 [Desafio](./Desafio/)
 
