@@ -24,12 +24,21 @@ data_atual = datetime.now()
 ano, mes, dia = data_atual.year, f"{
     data_atual.month:02}", f"{data_atual.day:02}"
 caminho_s3_filmes = f"Raw/Local/CSV/Movies/{ano}/{mes}/{dia}/movies.csv"
+caminho_s3_series = f"Raw/Local/CSV/Series/{ano}/{mes}/{dia}/series.csv"
 
 caminho_do_csv_filmes = "/app/movies.csv"
+caminho_do_csv_series = "/app/series.csv"
 
 try:
     s3.meta.client.upload_file(
         caminho_do_csv_filmes, nome_bucket, caminho_s3_filmes)
     print(f"Subindo CSV movies para o '{caminho_s3_filmes}'")
+except Exception as e:
+    print(f"Erro ao enviar o arquivo: {e}")
+
+try:
+    s3.meta.client.upload_file(
+        caminho_do_csv_series, nome_bucket, caminho_s3_series)
+    print(f"Subindo CSV series para o '{caminho_s3_series}'")
 except Exception as e:
     print(f"Erro ao enviar o arquivo: {e}")
