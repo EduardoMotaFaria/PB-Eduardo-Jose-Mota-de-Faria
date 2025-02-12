@@ -9,7 +9,7 @@
 * 🌍 **Localização:** Mogi-Mirim/SP.
 * 📚 **Instituição de Ensino:** FATEC Arthur de Azevedo.
 * 💻 **Curso:** Análise e Desenvolvimento de Sistema.
-* 🎓 **Semestre:** 3° semestre.
+* 🎓 **Semestre:** 4° semestre.
 * 💼 **Experiência:** Estagio Compass.UOL
 * 💭 **Soft Skills:** Adaptabilidade, trabalho em equipe, comunicação, autodisciplina, resiliência.
 * 💡 **Conhecimento:** Linux, Git e GitHub, C, SQL.
