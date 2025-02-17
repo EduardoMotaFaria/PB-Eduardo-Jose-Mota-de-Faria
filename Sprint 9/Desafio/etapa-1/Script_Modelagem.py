@@ -7,21 +7,17 @@ from awsglue.dynamicframe import DynamicFrame
 from awsglue.utils import getResolvedOptions
 from awsglue.job import Job
 
-# Pegar os argumentos do Glue Job
 args = getResolvedOptions(
     sys.argv, ['JOB_NAME', 'S3_INPUT_PATH', 'S3_TARGET_PATH'])
 
-# Criar o contexto Glue e Spark
 spark = SparkSession.builder.appName("TratamentoFilmes").getOrCreate()
 glueContext = GlueContext(spark.sparkContext)
 job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
-# Caminho do S3 de entrada e saída
 input_path = args['S3_INPUT_PATH']
 output_path = args['S3_TARGET_PATH']
 
-# Ler o arquivo Parquet como DynamicFrame
 dyf = glueContext.create_dynamic_frame.from_options(
     format_options={"useGlueParquetWriter": True},
     connection_type="s3",
@@ -29,16 +25,13 @@ dyf = glueContext.create_dynamic_frame.from_options(
     connection_options={"paths": [input_path], "recurse": True}
 )
 
-# Converter para DataFrame
 df = dyf.toDF()
 
-# Explodir a coluna 'genres' para separar ID e Nome do Gênero
 df = df.withColumn("genre", explode(col("genres"))) \
        .withColumn("id_genre", col("genre.id")) \
        .withColumn("name_genre", col("genre.name")) \
        .drop("genre", "genres")
 
-# Explodir a coluna 'production_companies' para separar ID e Nome da Produtora
 df = df.withColumn("company", explode(col("production_companies"))) \
        .withColumn("id_company", col("company.id")) \
        .withColumn("name_company", col("company.name")) \
@@ -48,14 +41,12 @@ df = df.withColumn("total_revenue", col("revenue.int")).drop("revenue")
 
 df = df.withColumn("release_date", to_date(col("release_date"), "yyyy-MM-dd"))
 
-# Criar um DataFrame com diretores únicos e adicionar um ID
 directors_df = df.select("director").distinct().withColumn(
     "id_director", monotonically_increasing_id())
 
-# Juntar ao DataFrame original
+
 df = df.join(directors_df, on="director", how="left")
 
-# Remover espaços extras e tratar valores nulos
 df = df.withColumn("imdb_id", trim(col("imdb_id"))) \
        .withColumn("original_title", trim(col("original_title"))) \
        .withColumn("director", trim(col("director"))) \
@@ -66,7 +57,6 @@ df = df.withColumn("imdb_id", trim(col("imdb_id"))) \
        .withColumn("vote_count", when(col("vote_count").isNull(), 0).otherwise(col("vote_count")))\
        .withColumn("budget", when(col("budget").isNull(), 0).otherwise(col("budget")))
 
-# Criar DataFrames individuais e remover duplicatas
 
 df_generos = df.select("id_genre", "name_genre").dropDuplicates()
 df_diretores = df.select("id_director", "director").dropDuplicates()
@@ -75,7 +65,6 @@ df_filmes = df.select("imdb_id", "original_title", "release_date")
 df_fato_filmes = df.select("imdb_id", "id_genre", "id_director", "id_company",
                            "popularity", "vote_average", "vote_count", "total_revenue", "budget")
 
-# Salvar os DataFrames separados
 
 df_generos.coalesce(1).write.mode(
     "overwrite").parquet(f"{output_path}/dim_generos")
@@ -88,5 +77,4 @@ df_filmes.coalesce(1).write.mode(
 df_fato_filmes.coalesce(1).write.mode(
     "overwrite").parquet(f"{output_path}/fato_filmes")
 
-# Finalizar o job
 job.commit()
