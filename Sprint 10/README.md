@@ -4,7 +4,7 @@ Este arquivo contém a organização e o progresso realizado ao longo da Sprint,
 
 ## Resumo
 
-### AWS Lambda e API
+### AWS QuickSight
 Nesta Sprint, adquiri conhecimentos na ferramenta `AWS QuickSight`, desenvolvendo um `Dashboard` para uma visualização de análises melhor.
 
 Conhecimentos adquiridos foram:
